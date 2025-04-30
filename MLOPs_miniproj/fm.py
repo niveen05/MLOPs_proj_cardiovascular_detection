@@ -59,4 +59,6 @@ print("\n🧮 Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 import joblib
 
 # Assuming `xgb_model` is your trained model
-joblib.dump(xgb_model, "xgb_heart_model.pkl")
+model = joblib.load("xgb_heart_model.pkl")
+
+
