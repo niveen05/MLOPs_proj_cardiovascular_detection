@@ -5,7 +5,8 @@ import joblib
 from xgboost import XGBClassifier
 
 # Load the trained model
-model = joblib.load(r"C:\Users\nivee\Downloads\MLOPs_miniproj\xgb_heart_model.pkl")
+model = joblib.load("xgb_heart_model.pkl")
+
 
 # Streamlit UI
 st.title("❤️ Heart Disease Predictor")
